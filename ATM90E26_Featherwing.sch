@@ -13119,7 +13119,7 @@ chip</description>
 </libraries>
 <attributes>
 <attribute name="CNAME" value="ATM90E26 ENERGY MONITOR FEATHERWING"/>
-<attribute name="CREVISION" value="1.0"/>
+<attribute name="CREVISION" value="1.1"/>
 <attribute name="DESIGNER" value="TISHAM DHAR"/>
 </attributes>
 <variantdefs>
@@ -13995,6 +13995,15 @@ chip</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,177.8,45.72,3V,+3V3,,,,"/>
+<approved hash="104,1,17.78,71.12,U1,DGND,GND,,,"/>
+<approved hash="104,1,17.78,68.58,U1,DVDD,+3V3,,,"/>
+<approved hash="104,1,17.78,63.5,U1,AVDD,N$6,,,"/>
+<approved hash="104,1,17.78,60.96,U1,AGND,GND,,,"/>
+<approved hash="104,1,17.78,40.64,U1,AGND,GND,,,"/>
+<approved hash="117,1,185.42,88.9,VBAT,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
