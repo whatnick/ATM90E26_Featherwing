@@ -13135,7 +13135,10 @@ chip</description>
 <parts>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="M"/>
 <part name="CF1" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254" value="WIREPADSMD1,27-254"/>
-<part name="U1" library="ATM90E26" deviceset="ATM90E26" device=""/>
+<part name="U1" library="ATM90E26" deviceset="ATM90E26" device="">
+<attribute name="MANF" value="Atmel"/>
+<attribute name="MANF#" value="90E26"/>
+</part>
 <part name="CF2" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254" value="WIREPADSMD1,27-254"/>
 <part name="WARN" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254" value="WIREPADSMD1,27-254"/>
 <part name="INT" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254" value="WIREPADSMD1,27-254"/>
@@ -13223,7 +13226,10 @@ chip</description>
 <instance part="CF1" gate="G$1" x="60.96" y="48.26" smashed="yes" rot="R180">
 <attribute name="NAME" x="59.309" y="49.9618" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="U1" gate="G$1" x="30.48" y="55.88"/>
+<instance part="U1" gate="G$1" x="30.48" y="55.88">
+<attribute name="MANF" x="30.48" y="55.88" size="1.778" layer="96" display="off"/>
+<attribute name="MANF#" x="30.48" y="55.88" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="CF2" gate="G$1" x="60.96" y="50.8" smashed="yes" rot="R180">
 <attribute name="NAME" x="59.055" y="52.5018" size="1.778" layer="95" rot="R180"/>
 </instance>
