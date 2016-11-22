@@ -1373,6 +1373,8 @@ design rules under a new name.</description>
 <element name="U1" library="ATM90E26" package="SSOP-28" value="ATM90E26" x="24.13" y="13.97" smashed="yes" rot="R270">
 <attribute name="NAME" x="25.62" y="20.193" size="0.8" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="21.2725" y="6.985" size="0.8" layer="27" font="vector" ratio="20"/>
+<attribute name="MANF" value="Atmel" x="24.13" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANF#" value="90E26" x="24.13" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="USEL" library="jump-0r-smd" package="A0R-JMP" value="0R-JUMPA" x="22.987" y="10.0584" smashed="yes" rot="MR270">
 <attribute name="NAME" x="26.367" y="11.2014" size="0.8" layer="26" font="vector" ratio="20" rot="MR270"/>
