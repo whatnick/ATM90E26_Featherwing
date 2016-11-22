@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9,6 +9,8 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -13116,6 +13118,109 @@ chip</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="jumper">
+<description>&lt;b&gt;Jumpers&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SJ">
+<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
+<wire x1="1.397" y1="-1.016" x2="-1.397" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="1.397" y1="1.016" x2="1.651" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.651" y1="0.762" x2="-1.397" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.651" y1="-0.762" x2="-1.397" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.397" y1="-1.016" x2="1.651" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.651" y1="-0.762" x2="1.651" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.651" y1="-0.762" x2="-1.651" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.397" y1="1.016" x2="1.397" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0" x2="1.524" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.016" y1="0" x2="-1.524" y2="0" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="-0.127" x2="-0.254" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="0.254" y1="0.127" x2="0.254" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="1" x="-0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<smd name="2" x="0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<text x="-1.651" y="1.143" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0.4001" y="0" size="0.02" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.0762" y1="-0.9144" x2="0.0762" y2="0.9144" layer="29"/>
+</package>
+<package name="SJW">
+<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
+<wire x1="1.905" y1="-1.524" x2="-1.905" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.524" x2="2.159" y2="1.27" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.159" y1="1.27" x2="-1.905" y2="1.524" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.159" y1="-1.27" x2="-1.905" y2="-1.524" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.905" y1="-1.524" x2="2.159" y2="-1.27" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.159" y1="-1.27" x2="2.159" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="-1.27" x2="-2.159" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.524" x2="1.905" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="1.524" y1="0" x2="2.032" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.524" y1="0" x2="-2.032" y2="0" width="0.1524" layer="51"/>
+<wire x1="0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.1524" layer="51" curve="-180"/>
+<wire x1="-0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.1524" layer="51" curve="180"/>
+<smd name="1" x="-1.27" y="0" dx="1.27" dy="2.54" layer="1"/>
+<smd name="2" x="1.27" y="0" dx="1.27" dy="2.54" layer="1"/>
+<text x="-2.159" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="1" y="0" size="0.02" layer="27">&gt;VALUE</text>
+<rectangle x1="0.762" y1="-0.762" x2="1.016" y2="0.762" layer="51"/>
+<rectangle x1="1.016" y1="-0.635" x2="1.27" y2="0.635" layer="51"/>
+<rectangle x1="1.27" y1="-0.508" x2="1.397" y2="0.508" layer="51"/>
+<rectangle x1="1.397" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="-1.016" y1="-0.762" x2="-0.762" y2="0.762" layer="51"/>
+<rectangle x1="-1.27" y1="-0.635" x2="-1.016" y2="0.635" layer="51"/>
+<rectangle x1="-1.397" y1="-0.508" x2="-1.27" y2="0.508" layer="51"/>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.397" y2="0.254" layer="51"/>
+<rectangle x1="0.9652" y1="-0.7112" x2="1.0922" y2="-0.5842" layer="51"/>
+<rectangle x1="1.3462" y1="-0.3556" x2="1.4732" y2="-0.2286" layer="51"/>
+<rectangle x1="1.3462" y1="0.2032" x2="1.4732" y2="0.3302" layer="51"/>
+<rectangle x1="0.9652" y1="0.5842" x2="1.0922" y2="0.7112" layer="51"/>
+<rectangle x1="-1.0922" y1="-0.7112" x2="-0.9652" y2="-0.5842" layer="51"/>
+<rectangle x1="-1.4478" y1="-0.3302" x2="-1.3208" y2="-0.2032" layer="51"/>
+<rectangle x1="-1.4732" y1="0.2032" x2="-1.3462" y2="0.3302" layer="51"/>
+<rectangle x1="-1.1176" y1="0.5842" x2="-0.9906" y2="0.7112" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SJ">
+<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SJ" prefix="SJ" uservalue="yes">
+<description>SMD solder &lt;b&gt;JUMPER&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="SJ" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SJ">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="W" package="SJW">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="CNAME" value="ATM90E26 ENERGY MONITOR FEATHERWING"/>
@@ -13203,6 +13308,10 @@ chip</description>
 <part name="CS" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254" value="WIREPADSMD1,27-254"/>
 <part name="C16" library="Discrete" deviceset="C*" device="-0603" value="100n"/>
 <part name="C17" library="Discrete" deviceset="C*" device="-0603" value="100n"/>
+<part name="MOMUX" library="jump-0r-smd" deviceset="0R-JUMP" device="A" value="0R-JUMPA"/>
+<part name="MIMUX" library="jump-0r-smd" deviceset="0R-JUMP" device="A" value="0R-JUMPA"/>
+<part name="CSMUX" library="jump-0r-smd" deviceset="0R-JUMP" device="A" value="0R-JUMPA"/>
+<part name="SCK" library="jumper" deviceset="SJ" device="" value="SCK"/>
 </parts>
 <sheets>
 <sheet>
@@ -13214,9 +13323,12 @@ chip</description>
 <wire x1="152.4" y1="102.87" x2="152.4" y2="22.86" width="0.1524" layer="94"/>
 <text x="53.34" y="27.94" size="2.54" layer="94" ratio="20">ATM90E26 Circuit</text>
 <text x="177.8" y="27.94" size="2.54" layer="94" ratio="20">Featherwing Template</text>
-<wire x1="101.6" y1="22.86" x2="101.6" y2="-76.2" width="0.1524" layer="94"/>
+<wire x1="101.6" y1="22.86" x2="101.6" y2="-16.764" width="0.1524" layer="94"/>
 <text x="0" y="17.78" size="2.54" layer="94">Voltage and Current Sampling + Supply</text>
-<text x="142.24" y="-22.86" size="2.54" layer="94">Grove Connectors</text>
+<text x="137.16" y="-12.7" size="2.54" layer="94">Grove Connectors</text>
+<wire x1="101.6" y1="-16.764" x2="101.6" y2="-76.2" width="0.1524" layer="94"/>
+<wire x1="101.6" y1="-16.764" x2="234.95" y2="-16.764" width="0.1524" layer="94"/>
+<text x="109.22" y="-63.5" size="2.54" layer="94">PINMUX</text>
 </plain>
 <instances>
 <instance part="LOGO1" gate="G$1" x="220.98" y="-43.18"/>
@@ -13262,11 +13374,11 @@ chip</description>
 <instance part="MMD1" gate="-0R" x="27.94" y="86.36" smashed="yes" rot="R180">
 <attribute name="NAME" x="15.494" y="88.392" size="1.778" layer="95"/>
 </instance>
-<instance part="MMD1" gate="G$2" x="30.48" y="83.82" rot="R180"/>
+<instance part="MMD1" gate="G$2" x="25.4" y="83.82" rot="R180"/>
 <instance part="MMD0" gate="-0R" x="35.56" y="86.36" smashed="yes">
 <attribute name="NAME" x="48.26" y="90.17" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="MMD0" gate="G$2" x="33.02" y="88.9"/>
+<instance part="MMD0" gate="G$2" x="38.1" y="83.82" rot="R180"/>
 <instance part="+3V3" gate="G$1" x="31.75" y="91.44" smashed="yes">
 <attribute name="VALUE" x="21.336" y="94.742" size="1.778" layer="96"/>
 </instance>
@@ -13338,6 +13450,19 @@ chip</description>
 </instance>
 <instance part="C16" gate="C" x="41.91" y="-44.45" rot="R90"/>
 <instance part="C17" gate="C" x="64.77" y="-44.45" rot="R90"/>
+<instance part="MOMUX" gate="-0R" x="106.68" y="-22.86" smashed="yes">
+<attribute name="NAME" x="103.632" y="-18.034" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="MOMUX" gate="G$2" x="109.22" y="-27.94" rot="R270"/>
+<instance part="MIMUX" gate="-0R" x="106.68" y="-35.56" smashed="yes">
+<attribute name="NAME" x="103.632" y="-30.734" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="MIMUX" gate="G$2" x="109.22" y="-40.64" rot="R270"/>
+<instance part="CSMUX" gate="-0R" x="106.68" y="-45.72" smashed="yes">
+<attribute name="NAME" x="103.632" y="-43.434" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="CSMUX" gate="G$2" x="109.22" y="-50.8" rot="R270"/>
+<instance part="SCK" gate="1" x="139.7" y="-30.48" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -13381,6 +13506,11 @@ chip</description>
 <label x="48.26" y="63.5" size="1.778" layer="95"/>
 <pinref part="CS" gate="G$1" pin="P"/>
 </segment>
+<segment>
+<pinref part="CSMUX" gate="-0R" pin="2"/>
+<wire x1="109.22" y1="-45.72" x2="113.792" y2="-45.72" width="0.1524" layer="91"/>
+<label x="114.3" y="-45.72" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SCLK" class="0">
 <segment>
@@ -13388,6 +13518,11 @@ chip</description>
 <wire x1="45.72" y1="66.04" x2="55.88" y2="66.04" width="0.1524" layer="91"/>
 <label x="48.26" y="66.04" size="1.778" layer="95"/>
 <pinref part="SCLK" gate="G$1" pin="P"/>
+</segment>
+<segment>
+<pinref part="SCK" gate="1" pin="1"/>
+<wire x1="144.78" y1="-30.48" x2="152.4" y2="-30.48" width="0.1524" layer="91"/>
+<label x="152.4" y="-30.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VP" class="0">
@@ -13503,9 +13638,9 @@ chip</description>
 <label x="183.388" y="3.81" size="0.6096" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MS1" gate="G$1" pin="GPIO12"/>
-<wire x1="195.58" y1="88.9" x2="195.58" y2="95.25" width="0.1524" layer="91"/>
-<label x="195.58" y="93.98" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="MOMUX" gate="-0R" pin="2"/>
+<wire x1="109.22" y1="-22.86" x2="115.316" y2="-22.86" width="0.1524" layer="91"/>
+<label x="115.316" y="-22.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SO/TX" class="0">
@@ -13521,9 +13656,9 @@ chip</description>
 <label x="183.642" y="1.27" size="0.6096" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MS1" gate="G$1" pin="GPIO13"/>
-<wire x1="193.04" y1="88.9" x2="193.04" y2="95.504" width="0.1524" layer="91"/>
-<label x="193.04" y="93.98" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="MIMUX" gate="-0R" pin="2"/>
+<wire x1="109.22" y1="-35.56" x2="113.538" y2="-35.56" width="0.1524" layer="91"/>
+<label x="114.3" y="-35.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -13990,6 +14125,96 @@ chip</description>
 <pinref part="J3" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="3.81" x2="145.288" y2="3.81" width="0.1524" layer="91"/>
 <label x="145.288" y="3.81" size="0.6096" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SCK" class="0">
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIOSCK"/>
+<wire x1="200.66" y1="45.72" x2="200.66" y2="39.624" width="0.1524" layer="91"/>
+<label x="200.66" y="40.64" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SCK" gate="1" pin="2"/>
+<wire x1="134.62" y1="-30.48" x2="130.302" y2="-30.48" width="0.1524" layer="91"/>
+<label x="130.302" y="-30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="MOSI" class="0">
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIOMOSI"/>
+<wire x1="203.2" y1="45.72" x2="203.2" y2="39.878" width="0.1524" layer="91"/>
+<label x="203.2" y="40.64" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="MOMUX" gate="-0R" pin="3"/>
+<wire x1="106.68" y1="-25.4" x2="106.68" y2="-26.416" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="-26.416" x2="115.316" y2="-26.416" width="0.1524" layer="91"/>
+<label x="115.57" y="-26.416" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MISO" class="0">
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIOMISO"/>
+<wire x1="205.74" y1="45.72" x2="205.74" y2="39.878" width="0.1524" layer="91"/>
+<label x="205.74" y="40.64" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="MIMUX" gate="-0R" pin="3"/>
+<wire x1="106.68" y1="-38.1" x2="106.68" y2="-39.37" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="-39.37" x2="113.792" y2="-39.37" width="0.1524" layer="91"/>
+<label x="114.046" y="-39.37" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="CS_10" class="0">
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIO10"/>
+<wire x1="200.66" y1="88.9" x2="200.66" y2="94.234" width="0.1524" layer="91"/>
+<label x="200.66" y="93.98" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="CSMUX" gate="-0R" pin="1"/>
+<wire x1="106.68" y1="-43.18" x2="106.68" y2="-42.418" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="-42.418" x2="113.792" y2="-42.418" width="0.1524" layer="91"/>
+<label x="113.792" y="-42.418" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="CS_9" class="0">
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIO9"/>
+<wire x1="203.2" y1="88.9" x2="203.2" y2="94.234" width="0.1524" layer="91"/>
+<label x="203.2" y="93.98" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="CSMUX" gate="-0R" pin="3"/>
+<wire x1="106.68" y1="-48.26" x2="106.68" y2="-49.276" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="-49.276" x2="114.046" y2="-49.276" width="0.1524" layer="91"/>
+<label x="114.046" y="-49.276" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="ATM_TX" class="0">
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIO13"/>
+<wire x1="193.04" y1="88.9" x2="193.04" y2="95.504" width="0.1524" layer="91"/>
+<label x="193.04" y="93.98" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="MIMUX" gate="-0R" pin="1"/>
+<wire x1="106.68" y1="-33.02" x2="106.68" y2="-31.75" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="-31.75" x2="113.538" y2="-31.75" width="0.1524" layer="91"/>
+<label x="113.538" y="-31.75" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="ATM_RX" class="0">
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIO12"/>
+<wire x1="195.58" y1="88.9" x2="195.58" y2="95.25" width="0.1524" layer="91"/>
+<label x="195.58" y="93.98" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="MOMUX" gate="-0R" pin="1"/>
+<wire x1="106.68" y1="-20.32" x2="106.68" y2="-19.304" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="-19.304" x2="115.316" y2="-19.304" width="0.1524" layer="91"/>
+<label x="115.57" y="-19.304" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
