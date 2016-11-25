@@ -155,7 +155,8 @@
 </layers>
 <board>
 <plain>
-<wire x1="0.1" y1="2" x2="0.1" y2="37.37" width="0" layer="20"/>
+<wire x1="0.1" y1="2" x2="0.1" y2="28.575" width="0" layer="20"/>
+<wire x1="0.1" y1="34.925" x2="0.1" y2="37.37" width="0" layer="20"/>
 <wire x1="0.1" y1="37.37" x2="2.1" y2="39.37" width="0" layer="20" curve="-90"/>
 <wire x1="2.1" y1="39.37" x2="48" y2="39.37" width="0" layer="20"/>
 <wire x1="48" y1="39.37" x2="50" y2="37.37" width="0" layer="20" curve="-90"/>
@@ -182,6 +183,9 @@ in SPI mode. CS on pin
 pins 11-RX, 13-TX
 (13-RX,14-TX Huzzah)</text>
 <text x="9.144" y="31.877" size="0.8" layer="22" font="vector" ratio="20" rot="MR270" align="bottom-center">TAPR</text>
+<wire x1="0.1" y1="28.575" x2="1.524" y2="30.099" width="0" layer="20" curve="-90"/>
+<wire x1="1.524" y1="30.099" x2="1.524" y2="33.401" width="0" layer="20"/>
+<wire x1="1.524" y1="33.401" x2="0.1" y2="34.925" width="0" layer="20" curve="-90"/>
 </plain>
 <libraries>
 <library name="Seeed-Capacitor-2016">
